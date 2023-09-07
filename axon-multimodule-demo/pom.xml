@@ -11,6 +11,7 @@
   <modules>
     <module>command</module>
     <module>query</module>
+    <module>core-data</module>
   </modules>
 
   <name>axon-multimodule-demo</name>
