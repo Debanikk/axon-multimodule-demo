@@ -4,6 +4,20 @@ server:
 spring:
   application:
     name: query
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#      username: postgres
+#      password: root
+#      url: jdbc:postgresql://localhost:5432/productdb
+#      platform: postgres
+#      initialization-mode: always
+#      continue-on-error: true
+#  jpa:
+#    show-sql: true
+#    generate-ddl: true
+#    hibernate:
+#      ddl-auto: create-drop
+#    database: postgresql
   datasource:
     driverClassName: org.h2.Driver
     url: jdbc:h2:mem:productdb

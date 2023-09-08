@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EnableJpaRepositories("com.wildfiredk.data.repository")
-@EntityScan("com.wildfiredk.data")
+@EntityScan("com.wildfiredk.data, org.axonframework.eventhandling.tokenstore, org.axonframework.modelling.saga.repository.jpa, org.axonframework.eventsourcing.eventstore.jpa")
 public class QueryApplication {
     public static void main(String[] args) {
         SpringApplication.run(QueryApplication.class, args);

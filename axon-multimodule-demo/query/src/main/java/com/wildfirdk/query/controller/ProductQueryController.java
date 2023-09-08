@@ -21,7 +21,7 @@ public class ProductQueryController {
         this.queryGateway = queryGateway;
     }
 
-    @GetMapping
+    @GetMapping("/GetAllProducts")
     public List<ProductRestModel> getAllProducts() {
         GetProductsQuery getProductsQuery = new GetProductsQuery();
         List<ProductRestModel> productRestModelsList = queryGateway.query(getProductsQuery, ResponseTypes.multipleInstancesOf(ProductRestModel.class)).join();
